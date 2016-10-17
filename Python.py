@@ -11,10 +11,15 @@ table["var1"] = (table.index.levels[0])[table.index.labels[0]]
 table["var2"] = (table.index.levels[1])[table.index.labels[1]]
 
 
-### Boxplot
+### Plots
 
+# Boxplot
 df.boxplot(column="var_to_plot", by="group_var")
-
+# Histogram
+plt.hist(df.variable) # also works with df.groupby(...).variable.grouper()
+plt.title("Title")
+plt.xlabel("Label for x-axis")
+plt.ylabel("Label for y-axis")
 
 ### Draw a dendrogram
 
