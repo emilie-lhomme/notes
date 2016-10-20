@@ -27,3 +27,6 @@ from sklearn.metrics.pairwise import euclidean_distances
 from scipy.cluster import hierarchy
 Z = hierarchy.linkage(euclidean_distances(mileage), 'ward') # Can also use 'average', 'single', 'complete'...
 hierarchy.dendrogram(Z)
+
+##### test
+import pandas as pd
