@@ -29,4 +29,3 @@ Z = hierarchy.linkage(euclidean_distances(mileage), 'ward') # Can also use 'aver
 hierarchy.dendrogram(Z)
 
 ##### test
-import pandas as pd
