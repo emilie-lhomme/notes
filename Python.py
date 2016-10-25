@@ -17,7 +17,16 @@ cols = [ x for x in table.columns if x.startswith("Work_")]
 sub_table = table[cols]
 
 
-### Plots
+### Print the variables which are not float
+
+dtypes = table.dtypes
+for i in range(len(dtypes)):
+    if dtypes[i] != 'float64':
+        print (dtypes.index[i])
+        
+    
+
+### PLOTS
 
 # Boxplot
 df.boxplot(column="var_to_plot", by="group_var")
