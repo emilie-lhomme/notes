@@ -11,6 +11,12 @@ table["var1"] = (table.index.levels[0])[table.index.labels[0]]
 table["var2"] = (table.index.levels[1])[table.index.labels[1]]
 
 
+### Select columns starting with "Work_" from a df
+
+cols = [ x for x in table.columns if x.startswith("Work_")]
+sub_table = table[cols]
+
+
 ### Plots
 
 # Boxplot
