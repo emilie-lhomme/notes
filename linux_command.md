@@ -1,5 +1,5 @@
 ### Line count
-wc -l <i>FILE</i>
+wc -l <i>file</i>
 
 ### Create newfile with the first 200 rows of file
-head -n 200 FILE > NEWFILE
+head -n 200 <i>file</i> > <i>newfile</i>
