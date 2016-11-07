@@ -1,3 +1,10 @@
+# Useful SQL queries for Postgres
+
+### In a column, transform 'value' in NULL
+
+NULLIF("column", 'value')
+
+
 # Some useful SQL queries for Teradata 
 
 ### Tables in a database in Teradata
