@@ -42,3 +42,11 @@ from sklearn.metrics.pairwise import euclidean_distances
 from scipy.cluster import hierarchy
 Z = hierarchy.linkage(euclidean_distances(mileage), 'ward') # Can also use 'average', 'single', 'complete'...
 hierarchy.dendrogram(Z)
+
+## Draw the trendline on a scatterplot
+plt.plot(x,y,'o')# plot the data itself
+z = numpy.polyfit(x, data.sales, 3) # calc the trendline
+f = numpy.poly1d(z)
+x_new = numpy.linspace(x[0], x[len(x)-1], 50)
+y_new = f(x_new)
+plt.plot(x_new,y_new,"-")
