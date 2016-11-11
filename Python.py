@@ -50,3 +50,9 @@ f = numpy.poly1d(z)
 x_new = numpy.linspace(x[0], x[len(x)-1], 50)
 y_new = f(x_new)
 plt.plot(x_new,y_new,"-")
+
+### Draw a tree into a pdf (works with jpg, png)
+with open("tree.dot", 'w') as f:
+    f = tree.export_graphviz(reg_tree, feature_names=x.columns, impurity=False, out_file=f)
+Then type the cmd line:
+    dot -Tpdf iris.dot -o iris.pdf
