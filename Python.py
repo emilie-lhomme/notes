@@ -55,4 +55,4 @@ plt.plot(x_new,y_new,"-")
 with open("tree.dot", 'w') as f:
     f = tree.export_graphviz(reg_tree, feature_names=x.columns, impurity=False, out_file=f)
 Then type the cmd line:
-    dot -Tpdf iris.dot -o iris.pdf
+    dot -Tpdf tree.dot -o tree.pdf
